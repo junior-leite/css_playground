@@ -1,13 +1,38 @@
-html{
-    font-size: 10px;
-}
-
-div{
-    font-size: 10em;
-}
 h1{
     color:#d400ff;
     font-size: 3rem;
     background-color: aquamarine;
-    width: 20%;
+    border: 9px dotted gray;
+    /*border-width: 9px;
+    border-style: dotted;
+    border-color: gray;*/
+    width: 50%;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border: 3px solid;  
+    text-align: center; 
+    width: 50%; 
+}
+p{
+    background-color: black;
+    color: #ffffff;
+}
+span{
+    font-size: 40px;
+    font-family: "Comic Sans MS";
+    color: yellow;
+    text-decoration: underline;/*sublinha o item escolhido*/
+    text-transform: capitalize;/*coloca primeira letra maiúscula do item escolhido*/
+}
+ul{
+    font-size: 50px;
+    list-style: square;/*altera marcador dos itens listados*/
+}
+
+ol{
+    font-size: 50px;
+    list-style: lower-roman;/*altera marcador dos itens listados*/
+    margin-left: 40px;
 }
