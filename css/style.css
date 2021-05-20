@@ -36,3 +36,9 @@ ol{
     list-style: lower-roman;/*altera marcador dos itens listados*/
     margin-left: 40px;
 }
+.conteudo{
+    margin-left: 2rem;
+}
+#titulo-principal{
+    margin-left: 5rem;
+}
