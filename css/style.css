@@ -36,13 +36,45 @@ ol{
 #titulo-principal{
     margin-left: 5rem;
 }
-/*Explicando classes e Especificidade*/
-.titulo{
+/*Explicando classes e Especificidade em grau de importância*/
+/*     0   -    0  -  0  -   0
+/* important    id   classe   tag
+/* important 10000 -> sobrepõe as demais, utiliza em último caso 
+/* id - 1000 -> sobrepõe a classe e ID, mais utilizado no HTML 
+/* classe - 100 -> sobrepõe a tag
+/* tag - 1
+
+/* 1 - 0 - 0 */ /* #id */
+#titulo-principal{
+    color: aquamarine;
+} 
+/* 0 - 2 - 0 */ 
+.titulo.titulo-pagina{
+    color: purple;
+}
+
+/* 0 - 1 - 0 */ 
+.titulo-pagina{
     border: 5px solid red;
     font-size: 5rem;
-    color: red;  
+    color: red; 
+    margin-left: 4rem; 
 }
-.titulo-pagina{
+
+/* 0 - 1 - 0 */ 
+.titulo{
    border-style: dashed;
    color: green; 
+   margin-left: 0rem;
 }
+
+/* 0 - 0 - 1 */ 
+h1{
+    color: blue;
+    /* 1 - 0 - 0 - 1*/ 
+    /*color: blue !important;*/ 
+}
+
+/*Regra de Especificidade*/
+
+/* 0 - 1 - 0 */ 
