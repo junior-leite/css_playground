@@ -112,7 +112,39 @@ h1{
     font-size: 50px;
     color: white;
 }
+/*Tratando classe meu-input com atributo type"number"*/
+.meu-input[type="number"]{
+    font-size: 90px;
+    background-color: red;
+}
 .meu-input:focus{
     background-color: white;
     color: black;
+}
+
+.nav-menu{
+    border: 2px solid blue;
+    list-style: none;
+}
+/*Tratando classe menu-item*/
+.menu-item{
+    border: 2px dashed purple; 
+    background-color: gray;
+    margin-bottom: 20px;
+}
+/*Tratando classe menu-item, mas somente último filho*/
+.menu-item:last-child{
+    margin-bottom: 0px;
+}
+/*Tratando classe menu-item, mas somente primeiro filho*/
+.menu-item:first-child{
+    color: red;
+}
+/*Tratando classe menu-item, mas somente terceiro filho*/
+.menu-item:nth-child(3){
+    background-color: green;
+}
+/*Tratando classe menu-item, mas do segundo filho em diante*/
+.menu-item:nth-child(n + 2){
+    font-weight: bold;
 }
