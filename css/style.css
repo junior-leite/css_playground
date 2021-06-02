@@ -13,13 +13,7 @@ p{
     background-color: black;
     color: #ffffff;
 }
-span{
-    font-size: 40px;
-    font-family: "Comic Sans MS";
-    color: yellow;
-    text-decoration: underline;/*sublinha o item escolhido*/
-    text-transform: capitalize;/*coloca primeira letra maiúscula do item escolhido*/
-}
+
 ul{
     font-size: 50px;
     list-style: square;/*altera marcador dos itens listados*/
@@ -131,6 +125,10 @@ h1{
     border: 2px dashed purple; 
     background-color: gray;
     margin-bottom: 20px;
+    display: inline-block;
+    font-size: 30px;
+    min-width: 200px;
+    text-align: center;
 }
 /*Tratando classe menu-item, mas somente último filho*/
 .menu-item:last-child{
@@ -148,3 +146,37 @@ h1{
 .menu-item:nth-child(n + 2){
     font-weight: bold;
 }
+.bloco-inicial{
+    font-size: 50px;
+    background-color: aquamarine;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: block; /*por padrão display é block*/
+    width: 600px;
+}
+.span-inicial{
+    font-size: 40px;
+    font-family: "Comic Sans MS";
+    color: yellow;
+    text-decoration: underline;/*sublinha o item escolhido*/
+    text-transform: capitalize;/*coloca primeira letra maiúscula do item escolhido*/
+    /*display: inline;/*por padrão display é inline*/
+    display: inline-block;
+    width: 100px;/*ignorado por elemento inline*/
+    height: 50px;/*ignorado por elemento inline*/
+    margin-top: 10px;/*ignorado por elemento inline*/
+    margin-left: 40px;
+}
+.bloco-escondido{
+    display: none; /*esconde o display*/
+}
+
+/*elementos que são por default inline
+<span> <em> <strong> <a> */
+
+/*Display: Block - ocupa todo espaço destinado a ele
+Display: inline - ocupa somente o espaço utilizado
+Display: inline-block - é como inline, mas respeita as medidas width e height 
+Display: none - esconde o display */
