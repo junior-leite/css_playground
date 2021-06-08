@@ -5,17 +5,24 @@
 *{
     box-sizing: border-box;
 }
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0;
+
+}
 h2{
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     border: 3px solid;  
     text-align: center; 
-    width: 50%; 
+    width: 50%;*/ 
 }
-p{
+/*p{
     background-color: black;
     color: #ffffff;
-}
+}*/
 
 ul{
     font-size: 50px;
@@ -208,5 +215,101 @@ Display: none - esconde o display */
     margin: 10px;
     border-top: 10px solid green;
     border-bottom: 5px dashed green;
-    
+}
+
+/*Como esse elemento é uma Div, por padrão é um display block*/
+.wrapper{
+     font-size: 1.5rem;  
+     background-color: #768076;
+     display: block;
+     width: 40rem;
+     margin: 0 auto;
+}
+.wrapper p{
+    margin-top: 0;
+}
+/*colocar imagem a direita ou a esquerda do texto, parágrafo*/
+.wrapper .imagem-principal{
+    float: left;
+    /*border: 10px solid magenta;*/
+
+    /*margin-right: 10px;
+    margin-bottom: 10px;*/
+    margin: 0 30px 10px 0;
+}
+.segundo-paragrafo{
+    /*clear: both;*/
+}
+
+.wrapper .imagem-direita{
+    float: right;
+}
+.wrapper::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.box-1{
+    width: 33%;
+    height: 200px;
+
+}
+.red{
+    background-color: red;
+    float: right;
+}
+.blue{
+    background-color: blue;
+    float: right;
+    /*float: left;*/
+    /*margin-left: 30px;*/
+}
+.green{
+    background-color: green;
+    float: right;
+}
+.wrapper2{
+    font-size: 1.5rem;  
+    background-color: #f0ebb0;
+    width: 56rem;
+    margin: 20px auto;
+}
+.wrapper2::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.wrapper3{
+    font-size: 1.5rem;  
+    background-color: #f0ebb0;
+    width: 56rem;
+    margin: 20px auto;
+}
+.wrapper3::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.servico{
+    width: 31%;
+    border: 1px solid blue;
+    float: left;
+    min-height: 200px;
+    margin: 0 1%;
+    padding: 0 1%;
+}
+.wrapper4{
+    border: 2px solid blue;
+    padding: 20px;
+    margin-top: 40px;
+    position: relative;
+}
+.filho{
+    position:fixed;
+    background-color: red;
+    padding: 20px;
+    /*top: 20px;
+    left: 20px;*/
+    bottom: 20px;
+    right:30px;
 }
